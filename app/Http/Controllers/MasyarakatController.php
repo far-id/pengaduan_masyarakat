@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Masyarakat;
-use App\User;
 use Illuminate\Support\Str;
 use Illuminate\Http\Request;
 use Barryvdh\DomPDF\Facade as PDF;

@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Kegiatan;
-use Carbon\Carbon;
 use Illuminate\Http\Request;
 
 class KegiatanController extends Controller

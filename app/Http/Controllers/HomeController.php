@@ -4,8 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Kegiatan;
 use App\Pengaduan;
-use Carbon\Carbon;
-use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
@@ -28,7 +26,7 @@ class HomeController extends Controller
     {
         $bulan = Pengaduan::all();
         // $be = [];
-        $tahun = Carbon::now()->setTimezone('Asia/Jakarta')->format('Y');
+        $tahun = now()->format('Y');
 
         $jan = Pengaduan::whereMonth('created_at', '01')->whereYear('created_at', $tahun)->where('jenis', 'pengaduan')->get();
         $feb = Pengaduan::whereMonth('created_at', '02')->whereYear('created_at', $tahun)->where('jenis', 'pengaduan')->get();

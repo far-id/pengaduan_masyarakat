@@ -27,10 +27,11 @@ class CreatePetugasTable extends Migration
 
         Petugas::insert(
             [
-                'username' => 'admin',
-                'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', // password
+                'user_id' => '1',
                 'level' => 'admin',
-                'created_at' =>Carbon::now()->setTimezone('Asia/Jakarta'),
+                'nama' => 'admin',
+                'telpon' => '',
+                'created_at' =>now(),
             ]
         );
     }
