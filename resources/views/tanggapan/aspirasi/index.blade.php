@@ -14,7 +14,7 @@
       <div class="p-2 bd-highlight">
       </div>
       <div class="p-2 bd-highlight">
-        <a href="{{ route('aspirasiPdf') }}">PDF</a>
+        <a href="{{ route('aspirasiPdf') }}" target="_blank">PDF</a>
       </div>
     </div>
   </div>

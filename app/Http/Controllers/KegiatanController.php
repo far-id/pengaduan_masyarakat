@@ -9,6 +9,12 @@ class KegiatanController extends Controller
 {
     public function index()
     {
+        if (auth()->user()->level == 'admin')
+        {
+            $kegiatan = Kegiatan::all()
+                                ->SortByDesc('created_at');
+            return view('kegiatan.index', compact('kegiatan'));
+        }
         $kegiatan = Kegiatan::where('user_id',Auth()->id())
                             ->get()
                             ->SortByDesc('created_at');

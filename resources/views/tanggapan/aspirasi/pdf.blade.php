@@ -19,14 +19,14 @@
         </style>
 </head>
 <body>
-    <h2 align="center">Pengaduan</h2>
+    <h2 align="center">Aspirasi</h2>
     <table border="1px solid" rules="all" padding="10px" width="1000px">
         <thead>
             <tr>
                 <th width="3%">No</th>
                 <th width="7%">Tanggal</th>
                 <th width="10%">Pengirim</th>
-                <th width="30%">Pengaduan</th>
+                <th width="30%">Aspirasi</th>
                 <th width="11%">Foto</th>
                 <th width="26%">Tanggapan</th>
                 <th width="8%">Penanggap</th>

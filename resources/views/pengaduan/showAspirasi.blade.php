@@ -12,17 +12,17 @@
                         @php
                             $bukti = json_decode($as->gambar) ;
                             
-                            if ( $as->status == 'proses' ) {
-                                $proses =  "checked=''";
-                                $selesai = null;
+                            if ( $as->status == 'diterima' ) {
+                                $diterima =  "checked=''";
+                                $ditolak = null;
                                 $terkirim = null;
-                            } elseif ( $as->status == 'selesai' ) {
-                                $proses =  null;
-                                $selesai = "checked=''";
+                            } elseif ( $as->status == 'ditolak' ) {
+                                $diterima =  null;
+                                $ditolak = "checked=''";
                                 $terkirim = null;
                             } else {
-                                $proses =  null;
-                                $selesai = null;
+                                $diterima =  null;
+                                $ditolak = null;
                                 $terkirim = "checked=''";
                             }
                             
@@ -52,19 +52,19 @@
                                 <div class="form-check form-check-inline">
                                     <div class="col">
                                         <label class="radio">terkirim
-                                            <input type="radio" {{ $terkirim }} name="radio" value="selesai" disabled>
+                                            <input type="radio" {{ $terkirim }} name="radio" value="terkirim" disabled>
                                             <span class="checkmark"></span>
                                         </label>
                                     </div>
                                     <div class="col">
-                                        <label class="radio">proses
-                                            <input type="radio" {{ $proses }} name="radio" value="proses" disabled>
+                                        <label class="radio">diterima
+                                            <input type="radio" {{ $diterima }} name="radio" value="diterima" disabled>
                                             <span class="checkmark"></span>
                                         </label>
                                     </div>
                                     <div class="col">
-                                        <label class="radio">selesai
-                                            <input type="radio" {{ $selesai }} name="radio" value="selesai" disabled>
+                                        <label class="radio">ditolak
+                                            <input type="radio" {{ $ditolak }} name="radio" value="ditolak" disabled>
                                             <span class="checkmark"></span>
                                         </label>
                                     </div>
