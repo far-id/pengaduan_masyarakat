@@ -23,13 +23,13 @@
 <nav class="navbar navbar-expand-lg bg-primary fixed-top navbar-transparent " color-on-scroll="400">
     <div class="container">
         <div class="navbar-translate">
-            @if ( request()->is('login') )
-            <a class="navbar-brand" href="/login" rel="tooltip" data-placement="bottom">
-                Form Login
-            </a>
-            @else
+            @if ( request()->is('register') )
             <a class="navbar-brand" href="/register" rel="tooltip" data-placement="bottom">
                 Form Register
+            </a>
+            @else
+            <a class="navbar-brand" href="/login" rel="tooltip" data-placement="bottom">
+                Form Login
             </a>
             @endif
             
