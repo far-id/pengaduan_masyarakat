@@ -1,0 +1,10 @@
+instalasi github
+===================================================
+
+jalankan di cmd composer install
+ganti nama file ".env.example" menjadi ".env"
+buka file .env lalu sesuiakan database
+jalankan di cmd php artisan key:generate
+jalankan di cmd php artisan migrate
+
+===================================================
