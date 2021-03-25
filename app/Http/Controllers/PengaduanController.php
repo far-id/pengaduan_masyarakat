@@ -62,7 +62,6 @@ class PengaduanController extends Controller
         $pengaduan->penanggap_id = null;
         $pengaduan->status = 'terkirim';
         $pengaduan->jenis = $jenis;
-        // $pengaduan->created_at = now();
         $pengaduan->created_at = now();
         $pengaduan->updated_at = null;
 
