@@ -1,4 +1,4 @@
-<p align="center"><img src="https://laravel.com/img/logomark.min.svg" width="400"><img src="https://laravel.com/img/logotype.min.svg" width="400"></p>
+<p align="center"><img src="https://laravel.com/img/logotype.min.svg" width="400"></p>
 
 <p align="center">
 <a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
@@ -18,14 +18,16 @@
 
 ## Installasi
 
-- `composer install`
-- Ubah nama file `.env.example` menjadi `.env`
-- Sesuaikan konfigurasi database
-- 
+- jalankan di CMD/Terminal `composer install`
+- duplikat file `.env.example` dan ubah namanya menjadi `.env`
+- Sesuaikan konfigurasi database di dalam file `.env`
+- Jalankan di CMD/Terminal
 ```
 php artisan key:generate
 php artisan migrate
 php artisan db:seed
+
+php artisan serve
 ```
 
 ## User
@@ -45,7 +47,7 @@ Username & Password untuk login:
 - Rest API Server
 - Auth
 - CRUD
-  - Pengaduan
+  - Pengaduan & Aspirasi
   - Tanggapan
   - Kegiatan
   - Data Masyarakat
