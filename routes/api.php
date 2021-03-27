@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -19,38 +18,30 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::post('/login', function(Request $request){
-	$data = $request->validate([
-		'username'	=> 'required',
-		'password' => 'required'
-	]);
+Route::post('/login', 'Api\AuthController@login');
+Route::post('/register', 'Api\AuthController@register');
 
-	$user = App\User::where('username', $request->username)->first();
+// Route::post('/login', function(Request $request){
+// 	$data = $request->validate([
+// 		'username'	=> 'required',
+// 		'password' => 'required'
+// 	]);
 
-    if (! $user || !Hash::check($request->password, $user->password)) {
-        return response([
-            'username' => ['The provided credentials are incorrect.'],
-        ], 404);
-    }
+// 	$user = App\User::where('username', $request->username)->first();
 
-    return $user->createToken('my-token')->plainTextToken;
+//     if (! $user || !Hash::check($request->password, $user->password)) {
+//         return response([
+//             'username' => ['The provided credentials are incorrect.'],
+//         ], 404);
+//     }
 
-});
+//     return $user->createToken('my-token')->plainTextToken;
 
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
-});
-
-// Route::middleware('auth:sanctum')->get('/logout', function (Request $request) {
-//     $user = request()->user();
-//     $user->tokens()->where('id', $user->currentAccessToken()->id)->delete();
-//     return $request->user();
 // });
 
-Route::get('dashboard', 'Api\HomeController@index');
-// Route::get('kegiatan', 'Api\KegiatanController@index');
 
 Route::middleware('auth:sanctum')->group(function() {
+    Route::get('dashboard', 'Api\HomeController@index');
 
     //logout
     Route::get('/logout', function (Request $request) {

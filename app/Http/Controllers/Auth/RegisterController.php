@@ -57,23 +57,11 @@ class RegisterController extends Controller
      */
     protected function validator(array $data)
     {
-        return Validator::make($data, [
-            // 'name' => ['required', 'string', 'max:255'],
-            'username' => ['required', 'string', 'min:3', 'max:25', 'unique:users'],
-            // 'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
-            'password' => ['required', 'string', 'min:3', 'confirmed'],
-            'level' => ['required', 'string', 'max:10'],
-        ]);
+        return Validator::make($data, []);
     }
 
     protected function regist(Request $request)
     {
-        // User::create([
-        //     'username' => $data['username'],
-        //     'password' => bcrypt($data['password']),
-        //     'level' => $data['level'],
-        // ]);
-        // Auth::login();
         $messages = [
             'unique' => 'Username sudah ada',
             'max' => 'Username terlalu panjang',

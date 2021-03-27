@@ -52,7 +52,6 @@ class LoginController extends Controller
 
     public function login()
     {
-        // return 'nip';
         $username = request()->input('username');
         $password = request()->input('password');
         if(Auth::attempt(['username' => $username, 'password' => $password], true)){
@@ -68,13 +67,8 @@ class LoginController extends Controller
             else{
                 abort(404);
             }
-            
-            // Auth::logout();
-            // return redirect()->route('login');
         } elseif(!Auth::attempt(['username'=> $username, 'password'=>$password], false)){
             return redirect()->back()->with('error', 'Username/password salah');
         }
-        
-        
     }
 }
