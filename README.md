@@ -12,7 +12,7 @@
 - [Daftar isi](#daftar-isi).
 - [Installasi](#installasi).
 - [Link youtube](https://youtu.be/brYfkMhah3g).
-- [Link laporan](https://drive.google.com/file/d/16Nx5KXjJX_no_QEtTZo9IGMmcoHGGSHV/view?usp=sharing).
+- [Link laporan](https://drive.google.com/file/d/1lTdfUn24Y5Or7c8OjKstglnGbawfBi1g/view?usp=sharing).
 - [User](#user).
 - [Fitur](#Fitur).
 
