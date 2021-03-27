@@ -20,11 +20,11 @@
 
 Jalankan di CMD : 
 
-`composer install`
-Ubah nama file `.env.example` menjadi `.env`
-Sesuaikan konfigurasi database
-```
-php artisan key:generate
+- `composer install`
+- Ubah nama file `.env.example` menjadi `.env`
+- Sesuaikan konfigurasi database
+- ```
+ php artisan key:generate
 php artisan migrate
 php artisan db:seed
 ```
