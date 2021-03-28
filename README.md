@@ -15,7 +15,7 @@
 - [Fitur](#Fitur).
 - [Link youtube](https://youtu.be/brYfkMhah3g).
 - [Link laporan](https://drive.google.com/file/d/1lTdfUn24Y5Or7c8OjKstglnGbawfBi1g/view?usp=sharing).
-- [Demo](http://tranquil-taiga-82889.herokuapp.com).
+- [Demo](http://tranquil-taiga-82889.herokuapp.com/login).
 
 
 ## Installasi
